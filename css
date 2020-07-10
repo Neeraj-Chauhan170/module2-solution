@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+   
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+   
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+</head>
+ 
+<body style= "background:black">
+ <img src= "image.jpg" width= "450" height="400">
+ <img src= "sfit.jpg">
+    <h1><marquee><font size="8" color="cyan" face="Harrington">STUDENT'S REPORT CARD</font></marquee></h1>
+    <hr>
+    <br><br>
+    <table>
+    <tr>
+        <th bgcolor= "white">Physics</th>
+        <th bgcolor= "white">Chemistry</th>
+        <th bgcolor= "white">Math</th>
+        <th bgcolor= "white">Total</th>
+        <th bgcolor= "white">Grade</th>
+    </tr>
+    <tr>
+        <td th:text="{student.physics}"></td>
+        <td th:text="{student.chemistry}"></td>
+        <td th:text="{student.math}"></td>
+        <td th:text="{student.total}"></td>
+        <td th:text="{student.grade}"></td>
+    </tr>
+    </table>
+       
+   
+</body>
+</html>
